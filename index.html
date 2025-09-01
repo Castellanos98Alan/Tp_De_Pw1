@@ -6,14 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Formando mi primer formulario</title>
-<h1>Datos de contacto</h1>
-<p>Dirección: Entre Ríos 3429, B1754 San Justo, Provincia de Buenos Aires</p>
-<p>Telefono: 11 22334455</p>
-<p>email: magnumfitnesscenter@gmail.com</p> 
-<a href="https://magnumfitnesscenter.com/">Sitio oficial del gym</a>
-<h2>Mapa de ubicación</h2>
-<img src="img/mapaGym.jgp.jpg" alt="No hay imagen">
+    <a id="inicio"></a>
 
+
+    <h1>Datos de contacto</h1>
+    <p>Dirección: Entre Ríos 3429, B1754 San Justo, Provincia de Buenos Aires</p>
+    <p>Telefono: 11 22334455</p>
+    <p>email: magnumfitnesscenter@gmail.com</p>
+    <a href="https://magnumfitnesscenter.com/" target="_blank">Sitio oficial del gym</a>
+    <h2>Mapa de ubicación</h2>
+    <img src="img/mapaGym.jgp.jpg" alt="No hay imagen">
+    <br>
+    <h3>Formulario de contacto</h3>
+    <label for="nombre">Ingrese el nombre completo: </label>
+    <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
+    <br>
+    <label for="correo">Ingrese su correo electronico: </label>
+    <input type="email" name="email" id="email">
+    <br>
+    <label for="provincia">Ingrese su estado</label>
+    <select name="estado" id="estado">
+        <option value="">Definicion</option>
+        <option value="">Volumen</option>
+        <option value="">Equilibro</option>
+        <option value="">Ninguno</option>
+    </select><br>
+
+    <label for="consulta">Consulta</label>
+    <textarea name="consulta" id="consulta" rows="10" cols="50">Queria consultar por los nuevos proyectos</textarea>
+    <br>
+    <label for="condicion">Aceptas las condiciones?</label>
+    <input type="checkbox" name="condicion" id="condicion">
+    <br>
+    <label for="edad">Ingrese su edad:</label>
+    <input type="number" name="edad" id="edad">
+    <br>
+    <label for="rango"> Ingrese su peso:</label>
+    <input type="range" id="rango" min="0" max="250" value="55" oninput="valorRango.textContent = this.value">
+    <span id="valorRango">55</span><br>
+    <p>Entreno alguna vez?</p>
+    <label for="Si">Si</label>
+    <input type="radio" name="entreno" id="si" value="Si">
+    <br>
+    <label for="no">No</label>
+    <input type="radio" name="entreno" id="no" value="No">
 
 
 </head>
@@ -21,5 +57,9 @@
 <body>
 
 </body>
+<footer>
+    <br><br><br>
+    <a href="#inicio">Ir arriba</a>
+</footer>
 
 </html>
